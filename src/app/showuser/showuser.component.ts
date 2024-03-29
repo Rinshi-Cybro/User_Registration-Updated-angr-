@@ -57,6 +57,7 @@ export class ShowuserComponent implements OnInit {
       }
     }
   }
+  
   // delete function 
   onDelete(datas: any){
     this.user_records = JSON.parse(localStorage.getItem('users') || '{}');

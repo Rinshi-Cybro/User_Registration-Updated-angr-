@@ -28,9 +28,9 @@
                     <td>{{datas.country}}</td>
                     <td>{{datas.email}}</td>
                     <td>{{datas.UserName}}</td>
-                    <td>{{datas.Dob}}</td>
+                    <td>{{datas.Dob | date}}</td>
                     <td>{{datas.profilePhoto}}</td>
-                    <!-- <td><img src="{{datas.profilePhoto}}"></td> -->
+                    <!-- <td><img src=`+ {{ datas.profilePhoto }} +` alt='' style='width: 80px; height: 90px;'></td> -->
                     <td>
                         <!-- <button type="button" class="btn btn-sm btn-success" [routerLink]="['/updateUser',datas.userId]">Edit</button> -->
                         <button type="button" class="btn btn-sm btn-success m-2"

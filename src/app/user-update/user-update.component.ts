@@ -16,7 +16,7 @@ export class UserUpdateComponent implements OnInit {
   user: { id: number; } | undefined;
   
 
-  constructor(private route: ActivatedRoute,private path: Router){
+  constructor(private route: ActivatedRoute,private path: Router) {
     this.route.queryParams.subscribe((res)=> {
       console.log( res)
       console.log('user..........')
@@ -57,7 +57,7 @@ export class UserUpdateComponent implements OnInit {
         this.userData.pincode = currentUser.pincode; 
         this.userData.profilePhoto = currentUser.profilePhoto;   
         this.userData.userId = currentUser.userId;   
-        
+
       }
     }
   }
@@ -204,5 +204,6 @@ export class UserUpdateComponent implements OnInit {
     //   localStorage.setItem("users",JSON.stringify(this.userData));
     //   alert("User Data Successfully Registered");
     // }
+    
   }
 }

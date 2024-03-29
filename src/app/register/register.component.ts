@@ -130,14 +130,17 @@ export class RegisterComponent implements OnInit {
     this.userData.userId = latestId;
     const oldRecords = localStorage.getItem('users');
     if (oldRecords !== null) {
+
       // const users = JSON.parse(oldRecords);
       this.user_records = JSON.parse(localStorage.getItem('users') || '{}');
+
       // this.user_records.push(this.userData);
       // localStorage.setItem("users",JSON.stringify(this.user_records));
       // alert("User Data Successfully Registered");
     } 
     else{
       const user_records = [];
+      
       // this.user_records.push(this.userData);
       // localStorage.setItem("users",JSON.stringify(this.userData));
       // alert("User Data Successfully Registered");
